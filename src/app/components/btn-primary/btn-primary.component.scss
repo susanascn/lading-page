@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  padding: 10px 20px;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &.primary {
+    color: #660000;
+    background: #d2c661;
+
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  &.secondary {
+    background: #660000;
+    color: #ffe81d;
+
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+}

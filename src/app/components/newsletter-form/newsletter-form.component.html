@@ -1,0 +1,23 @@
+
+
+<section class="form-section">
+  <div class="text">
+    <h3>Precisa de Assistência Jurídica? <br> Preencha o Formulário e <strong>Receba um Contato Imediato!</strong></h3>
+    <p>Estamos prontos para ajudar com suas questões legais. Deixe seus dados e entraremos em contato o mais rápido possível.</p>
+
+  </div>
+  <form [formGroup]="newsletterForm">
+      <label for="name"> Nome </label>
+      <input id="name" formControlName="name"/>
+      <label for="email"> Email </label>
+      <input id="email" formControlName="email"/>
+      <app-btn-primary
+      btn-text="Se inscreva"
+      variant="primary"
+      (submit)="onSubmit()"
+      [disabled]="!newsletterForm.valid"
+      [loading]="loading()"
+      >
+    </app-btn-primary>
+</form>
+</section>

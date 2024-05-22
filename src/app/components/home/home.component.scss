@@ -1,0 +1,104 @@
+.main-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container .headline {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #d2c661;
+  text-align:left; /* Centraliza o texto no centro da tela */
+}
+
+.image-container .headline span {
+  display: block;
+  font-size: 1.3em;
+  font-weight: regular;
+  margin: 10px 0; /* Ajusta a margem para centralizar */
+}
+
+.image-container .headline h1 {
+  margin: 20px 0;
+  font-size: 2em; /* Ajusta o tamanho da fonte para ser responsivo */
+}
+
+.botao {
+  background-color: #008000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  display: inline-block;
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+}
+
+.botao:hover {
+  background-color: #006400;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media (max-width: 1200px) {
+  .image-container .headline h1 {
+    font-size: 1.8em;
+  }
+
+  .image-container .headline span {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-container .headline h1 {
+    font-size: 1.6em;
+  }
+
+  .image-container .headline span {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container .headline h1 {
+    font-size: 1.4em;
+  }
+
+  .image-container .headline span {
+    font-size: 1em;
+  }
+
+  .botao {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container .headline h1 {
+    font-size: 1.2em;
+  }
+
+  .image-container .headline span {
+    font-size: 0.9em;
+  }
+
+  .botao {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+}
